@@ -27,5 +27,9 @@ setup(
     packages=['titanic'],
     install_requires=[
         'pypandoc>=1.4'
-        ]
+        'pytest>=4.3.1',
+        'pytest-runner>=4.4',
+        ],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
 )
